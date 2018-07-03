@@ -1,14 +1,9 @@
+New parametros {
+
+}
+
 class Parametros
-
-	func inicializa() 
-		return
-
-	func getMinaDeOro_Num_Total() 
-		return MinaDeOro_Num_Total		
-
-	private
-
-	MinaDeOro_Num_Total = 12
+    MinaDeOro_Num_Total = 12
 
     Granja_Construccion_Coste = 50
     Granja_Construccion_Tiempo = 10
@@ -50,3 +45,10 @@ class Parametros
     oroInicial = 5000
 
     IDpartida = nullpointer()
+
+	func inicializa() 
+		return
+
+	func getMinaDeOro_Num_Total() 
+		return MinaDeOro_Num_Total	
+    
