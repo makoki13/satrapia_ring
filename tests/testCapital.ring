@@ -1,3 +1,5 @@
+// ***** definir y añadir palacio, centro de invstigacion, silos, cuartel, mercado, embajada, taberna, mina de oro, serreria, cantera y mina de hierro
+
 load "clases/clsImperio.ring"
 load "clases/clsProvincia.ring"
 load "clases/clsCapital.ring"
@@ -45,35 +47,3 @@ gandia = new capital
 gandia.constructor(1, 'Gandia', provincia1, punto )
 
 see "Capital: " + gandia.getNombre() + nl
-
-//definir y añadir palacio, centro de invstigacion, silos, cuartel, mercado, embajada, taberna, mina de oro, serreria, cantera y mina de hierro
-
-
-/*
-t = new Tarea
-j = new Jugador
-
-
-j = new Jugador
-
-j.setnombre('Makoki');
-
-see j.getnombre() + nl
-
-t = new Tarea
-
-t {
-    addTask ( j.myfunction )
-    runTask()
-}
-
-
-t {
-    constructor ( j.miFuncion )
-    execfuncion()
-}
-
-t.constructor(f)
-
-t.execfuncion()
-*/
