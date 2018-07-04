@@ -1,15 +1,21 @@
 TipoJugador = [ 'SIN_JUEGO' , 'EMPERADOR' , 'SATRAPA' , 'JEFE_DE_TRIBU' ]
 Class Jugador
-	idJugador = 0
-	idUsuario = 0
-	nombre = ''
-	tipo = 0
-	
-    myfunction = func() {
-		nombre = 'ppp'
-        ? nombre
+	idJugador
+	idUsuario
+	nombre
+	tipo
+
+	myfunction = func() {
+        ? a
     }
 
+	func constructor (id, idUsuario, nombre, tipo) {
+		this.idJugador = id
+		this.idUsuario = idUsuario
+		this.nombre = nombre
+		this.tipo = tipo
+	}
+	
 	func setidJugador id
 		self.idJugador = id
 

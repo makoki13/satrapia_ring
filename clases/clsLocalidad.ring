@@ -1,3 +1,4 @@
+// ***** TERMINADO
 class Localidad {
     id nombre esCapital provincia numeroDeHabitantes posicion
     

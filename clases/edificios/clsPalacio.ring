@@ -1,4 +1,5 @@
 load "../clsEdificio.ring"
+load "../clsProductor.ring"
 
 class Palacio From Edificio {
     id nombre capital dispatcher
@@ -11,7 +12,7 @@ class Palacio From Edificio {
     almacen // Almacen para el oro
     poblacion // Almacen para la población
 
-    func constructor (id, nombre, capital, dispatcher) {
+    func constructor (id, nombre, capital, dispatcher, Parametros) {
         super.constructor (id, nombre, TipoEdificio['PALACIO'], capital.getPosicion(), 0, 0)
         this.capital = capital
         this.dispatcher = dispatcher
@@ -19,10 +20,11 @@ class Palacio From Edificio {
         this.capital.setPalacio(this)
 
         let cantidadInicial = 2;
-        /* PENDIENTE Productor, Almacen, Extractor, Dispatcher
-        this.impuestos = new Productor ( null, ORO, 10, 10, 1);
-        this.almacen = new Almacen ( 66, 'Deposito de oro', ORO, capital.getPosicion(), Number.MAX_VALUE.valueOf());        
+        
+        this.impuestos = new Productor ( null, ORO, 10, 10, 1);        
+        this.almacen = new Almacen ( 66, 'Deposito de oro', ORO, capital.getPosicion(), 1_000_000);        
         this.almacen.addCantidad(Parametros.oroInicial);
+        /* PENDIENTE Extractor, Dispatcher */
         this.recaudador = new Extractor (this.impuestos, this.almacen, cantidadInicial);
         this.disp.addTareaRepetitiva(this, 'recaudaImpuestos', 1);
 

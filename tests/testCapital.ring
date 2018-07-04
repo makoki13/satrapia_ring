@@ -1,10 +1,10 @@
 // ***** definir y añadir palacio, centro de invstigacion, silos, cuartel, mercado, embajada, taberna, mina de oro, serreria, cantera y mina de hierro
 
-load "clases/clsImperio.ring"
-load "clases/clsProvincia.ring"
-load "clases/clsCapital.ring"
-load "clases/clsJugador.ring"
-load "clases/clsPunto.ring"
+load "../clases/clsImperio.ring"
+load "../clases/clsProvincia.ring"
+load "../clases/clsCapital.ring"
+load "../clases/clsJugador.ring"
+load "../clases/clsPunto.ring"
 
 see "Satrapia Ring" + nl
 
