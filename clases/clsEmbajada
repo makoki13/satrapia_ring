@@ -1,0 +1,23 @@
+/ ***** Hecho! */
+load "../clases/clsEdificio.ring"
+
+class Embajada from Edificio {
+    idEmbajada, 
+    nombreEmbajada, 
+    capitalEmbajada // Capital
+    dispatcher
+    imperios = [] // Array of imperios
+
+    constructor (id, nombre, capital, disp) {
+        super.constructor(id, nombre, TipoEdificio['EMBAJADA'], capital.getPosicion(), 0, 0)
+        capital.setEmbajada(this)
+    }
+
+    func addImperio ( nuevoImperio) {
+      Add(imperios, nuevoImperio )
+  }
+
+  public getLista() {
+    return this.imperios
+  }
+}

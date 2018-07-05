@@ -1,0 +1,23 @@
+/ ***** Hecho! */
+load "../clases/clsEdificio.ring"
+
+class Taberna from Edificio {
+    idTaberna
+    nombreTaberna
+    capital // Capital
+    dispatcher // Dispatcher
+    espias = [] //Array < Espia >
+
+    func constructor (id, nombre, capital, disp) {
+        super.constructor (id, nombre, TipoEdificio.TABERNA, capital.getPosicion(), 0, 0)
+        this.capital.setTaberna(this)
+    }
+
+    func addImperio ( nuevoImperio) {
+        Add(espias, nuevoImperio)
+    }
+
+    func getLista() {
+        return this.espias
+    }
+}

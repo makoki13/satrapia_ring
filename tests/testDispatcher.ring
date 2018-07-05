@@ -1,29 +1,12 @@
-
-/*
-load "../clases/clsTarea.ring"
+load "../clases/clsDispatcher.ring"
 load "../clases/clsJugador.ring"
 
-t = new Tarea
-j = new Jugador
-
-j.setnombre('Makoki');
-
-see j.getnombre() + nl
-
-t {
-    a = 'maks'
-    addTask ( j.myfunction )
-    runTask()
-}
-*/
-
-
-
-
-load "../clases/clsDispatcher"
-load "../clases/clsJugador.ring"
+see "Satrapia Ring . Test Dispatcher" + nl
 
 disp = new Dispatcher
+
+disp.constructor()
+
 j = new Jugador
 
 j.setnombre('Makoki');
@@ -35,4 +18,5 @@ disp {
     addTareaRepetitiva(j , j.myfunction, 3, '')   
 }
 
+//Hay que quitar esta instrucción: El timer está en el constructor.
 disp.ejecuta()

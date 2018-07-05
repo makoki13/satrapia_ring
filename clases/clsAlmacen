@@ -1,11 +1,16 @@
 /* HECHO! */
 class Almacen {
-    id nombre tipo posicion cantidad maxCantidad
+    id 
+    nombre 
+    recurso // Recurso 
+    posicion 
+    cantidad 
+    maxCantidad
 
-    func constructor (id, nombre, tipo, posicion, maxCantidad) {
+    func constructor (id, nombre, recurso, posicion, maxCantidad) {
         this.id = id
         this.nombre = nombre
-        this.tipo = tipo
+        this.recurso = recurso
         this.posicion = posicion
         this.cantidad = 0
         this.maxCantidad = maxCantidad        
@@ -25,7 +30,7 @@ class Almacen {
         return cantidad
     }
 
-    func getTipoRecurso() { return this.tipo }
+    func getTipoRecurso() { return this.recurso }
 
     func getCantidad() { return this.cantidad }
 

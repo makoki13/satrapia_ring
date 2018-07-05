@@ -1,12 +1,14 @@
 class Provincia {
-    id nombre jugador 
+    idProvincia 
+    nombreProvincia 
+    jugador 
     imperioProvincia
     satrapia // boolean        
     tribu //boolean
 
     func constructor (id, nombre, jugador, imperio, satrapia, tribu) {
-        this.id = id
-        this.nombre = nombre
+        this.idProvincia = id
+        this.nombreProvincia = nombre
         this.jugador = jugador
         this.imperioProvincia = imperio
         this.satrapia = satrapia

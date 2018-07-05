@@ -1,5 +1,7 @@
 load "../clases/edificios/clsPalacio.ring"
 
+see "Satrapia Ring . Test Palacio" + nl
+
 palacio = new palacio
 
 id = 1

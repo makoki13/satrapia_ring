@@ -2,7 +2,7 @@ TipoJugador = [ 'SIN_JUEGO' , 'EMPERADOR' , 'SATRAPA' , 'JEFE_DE_TRIBU' ]
 Class Jugador
 	idJugador
 	idUsuario
-	nombre
+	nombreJuego
 	tipo
 
 	myfunction = func() {
@@ -12,7 +12,7 @@ Class Jugador
 	func constructor (id, idUsuario, nombre, tipo) {
 		this.idJugador = id
 		this.idUsuario = idUsuario
-		this.nombre = nombre
+		this.nombreJuego = nombre
 		this.tipo = tipo
 	}
 	

@@ -1,0 +1,24 @@
+// ***** HECHO! */
+
+load "../clases/clsEdificio.ring"
+
+class Mercado from Edificio {
+    idMercado
+    nombreMercado
+    capitalMercado // Capital
+    dispatcher // Dispatcher
+    almacenes = [] // Lista de Almacenes
+
+    func constructor (id, nombre, capital, dispather) {
+        super,constructor (id, nombre, TipoEdificio.MERCADO, capital.getPosicion(), 0, 0);
+        this.capital.setMercado(this);
+    }
+
+    func addAlmacen ( nuevoAlmacen) {
+      Add(almacenes, nuevoAlmacen);
+    }
+
+    func getLista() {
+        return this.almacenes;
+    }
+}

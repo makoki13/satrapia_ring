@@ -6,7 +6,7 @@ load "../clases/clsCapital.ring"
 load "../clases/clsJugador.ring"
 load "../clases/clsPunto.ring"
 
-see "Satrapia Ring" + nl
+see "Satrapia Ring . Test Capital" + nl
 
 emperador = new Jugador
 emperador.setnombre('Makoki');

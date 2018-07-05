@@ -1,4 +1,4 @@
-// ***** PENDIENTE TESTEAR CUANDO EDIFICIO ESTE TESTEADO *****
+/ ***** PENDIENTE DE CAPITAL, PRODUCTOR, EXTRACTOR, DISPATCHER
 
 load "../clsEdificio.ring"
 load "../clsParametros.ring"
@@ -21,8 +21,7 @@ class Cantera From Edificio {
 
         this.cantidadInicial = Parametros.Cantera_Productor_CantidadInicial;
         this.cantidadMaxima = Parametros.Cantera_Productor_CantidadMaxima;
-
-        /* PENDIENTE DE CAPITAL, PRODUCTOR, EXTRACTOR, DISPATCHER
+        
         this.capital.addCantera(this);
 
         this.filon = new Productor ( null, PIEDRA, Cantera.cantidadInicial, Cantera.cantidadMaxima, Parametros.Cantera_Productor_Ratio);
@@ -33,11 +32,11 @@ class Cantera From Edificio {
         this.canteros = new Extractor (this.filon, this.almacen, Parametros.Cantera_Cosecha_Tamanyo);
 
         this.disp.addTareaRepetitiva(this, 'extrae', Parametros.Cantera_Cosecha_Tamanyo);
-        */
+       
         super.setStatus ('Sin envios actuales');
     }
 
-    /* PENDIENTE
+    
     extrae() {
         const cantidad = this.canteros.getCantidad();
         this.almacen.addCantidad (cantidad);
@@ -65,8 +64,7 @@ class Cantera From Edificio {
     public getPiedraActual() { return this.almacen.getCantidad(); }
     public getMaxAlmacen() { return this.almacen.getMaxCantidad(); }
     public estaActiva() { return (this.filon.getStock() > Parametros.Filon_Vacio); }
-     */
-
+    
     func getStatus() { return super.status }
     func setStatus(mensaje) { super.setStatus(mensaje) }
 }

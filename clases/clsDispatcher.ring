@@ -1,3 +1,4 @@
+// ***** TESTEO MÁS PROFUNDO. TIMER
 load "stdlib.ring"
 
 class Tareas {
@@ -36,6 +37,8 @@ class Dispatcher {
 
     func constructor() {
         this.listaDeTareas = []
+
+        /* Hay que poner aqui el timer */
     }
 
     func addTareaRepetitiva(c, f, tiempo, param) {

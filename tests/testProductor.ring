@@ -2,6 +2,8 @@ load "../clases/clsProductor.ring"
 load "../clases/clsPunto.ring"
 load "../clases/recursos/clsRecurso.ring"
 
+see "Satrapia Ring . Test Productor" + nl
+
 p = new Productor
 
 posicion = new Punto

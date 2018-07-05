@@ -1,0 +1,20 @@
+// ***** HECHO! */
+import { Productor } from './Productor';
+import { Almacen } from './Almacen';
+
+class Extractor {
+    productor // Productor
+    almacen // Almacen
+    cantidad // number
+    
+    func constructor(productor, almacen, cantidad) {
+        this.productor = productor
+        this.almacen = almacen
+        this.cantidad = cantidad
+    }
+
+    func getCantidad( ) {
+        cantidadExtraida = this.productor.extrae ( this.cantidad )
+        return cantidadExtraida
+  }
+}
